@@ -6,10 +6,14 @@ except FileNotFoundError as e:
     
 # File read and print
 try:
+    a = 10
     content = file.read()
     print(content)
     file.close()
-except Exception as e:
+except NameError as e:
     print(e)
 finally:
+    del a
     print("Finally executed")
+
+# print(a)  Give NameError
