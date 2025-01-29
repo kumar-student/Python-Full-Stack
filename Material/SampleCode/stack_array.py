@@ -1,4 +1,4 @@
-class Stack:
+class StackArray:
     def __init__(self, limit=10):
         self.arr = []
         self.limit = limit
@@ -39,7 +39,7 @@ class Stack:
                 print(i)
         return super().__str__()
 
-s = Stack(5)
+s = StackArray(5)
 
 s.push(10)
 s.push(7)
